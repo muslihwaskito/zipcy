@@ -85,13 +85,14 @@ const buystt = async () => {
           'error'
         )
 	}
-    if (chainId !== 56) {
-            Swal.fire(
-           'Connect Alert',
-           'Please Connect on Smart Chain!',
-           'error'
-         )
-    }
+	// console.log(chainId)
+    // if (chainId !== 18) {
+    //         Swal.fire(
+    //        'Connect Alert',
+    //        'Please Connect on Smart Chain!',
+    //        'error'
+    //      )
+    // }
 
     let ethval = document.getElementById("buyinput").value;
     if(ethval >= 0.01){ // EDITABLE minimun token buy value
